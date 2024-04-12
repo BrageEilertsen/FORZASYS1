@@ -30,3 +30,4 @@
 /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Elasticsearch.Net.dll
 /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Nest.dll
 /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.csproj.CopyComplete
+/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Newtonsoft.Json.dll

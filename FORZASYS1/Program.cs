@@ -1,18 +1,29 @@
-using Nest;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using Microsoft.Extensions.Options; // Make sure to include this for IOptions
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Bind Elastic configuration section to ElasticConfig class
+builder.Services.Configure<ElasticConfig>(builder.Configuration.GetSection("Elastic"));
+
+// This is where you're adding services to the DI container
 builder.Services.AddControllersWithViews();
 
-// Configure ElasticClient as a singleton to make sure that it is instantiated only once.
-builder.Services.AddSingleton<IElasticClient>(new ElasticClient(new ConnectionSettings(
-        new Uri("https://e5a011ed8a0046b7b29019b1ff352e35.us-central1.gcp.cloud.es.io:443"))
-    .DefaultIndex("aisearchindex")
-    .ApiKeyAuthentication("gLniwo4BZdwrVZPeVsls", "jCnxigoDSzGgdZjPXkzHfQ"))); 
+// Configure HttpClient for ElasticsearchService
+builder.Services.AddHttpClient<ElasticsearchService>((serviceProvider, client) =>
+{
+    var elasticConfig = serviceProvider.GetService<IOptions<ElasticConfig>>().Value; // Use IOptions to access configuration
 
-// Register ElasticsearchService
-builder.Services.AddScoped<ElasticsearchService>();
+    if (string.IsNullOrWhiteSpace(elasticConfig.ApiKey))
+    {
+        throw new InvalidOperationException("Elasticsearch API key is not configured properly.");
+    }
+
+    client.BaseAddress = new Uri(elasticConfig.Uri);
+    client.DefaultRequestHeaders.Clear();
+    client.DefaultRequestHeaders.Add("Authorization", $"ApiKey {elasticConfig.ApiKey}");
+});
 
 var app = builder.Build();
 

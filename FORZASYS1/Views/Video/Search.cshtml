@@ -1,0 +1,17 @@
+@model FORZASYS1.Models.VideoListViewModel
+
+@if (Model.Videos.Any())
+{
+    foreach (var video in Model.Videos.Where(v => !string.IsNullOrEmpty(v.Title) && !string.IsNullOrEmpty(v.Url)))
+    {
+        <div class="video-item">
+            <h3>@video.Title</h3>
+            <img src="@(!string.IsNullOrEmpty(video.ThumbnailUrl) ? video.ThumbnailUrl : "placeholder-image-url.jpg")" alt="Thumbnail for @video.Title">
+            <a href="@video.Url" target="_blank">Watch Video</a>
+        </div>
+    }
+}
+else
+{
+    <p>No videos found.</p>
+}
