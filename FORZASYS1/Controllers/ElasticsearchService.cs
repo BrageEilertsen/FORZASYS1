@@ -22,60 +22,64 @@ public class ElasticsearchService
     }
 
     public async Task<List<Video>> SearchHighlights(string searchTerm)
+{
+    var searchPayload = new
     {
-        var searchPayload = new
+        @params = new
         {
-            @params = new
-            {
-                query_string = searchTerm
-            }
-        };
-
-        var jsonPayload = JsonConvert.SerializeObject(searchPayload, new JsonSerializerSettings
-        {
-            ContractResolver = new DefaultContractResolver
-            {
-                NamingStrategy = new CamelCaseNamingStrategy()  // Ensure proper JSON casing
-            }
-        });
-
-        var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
-        var response = await _httpClient.PostAsync(_searchApiUrl, content);
-
-        if (response.IsSuccessStatusCode)
-        {
-            var rawJson = await response.Content.ReadAsStringAsync();
-            Console.WriteLine($"Raw Elasticsearch response: {rawJson}");  // Debugging the raw response
-
-            var searchResults = JsonConvert.DeserializeObject<SearchResultsResponse>(rawJson);
-            return searchResults?.Hits?.Hits.Select(hit =>
-            {
-                Console.WriteLine($"_id from hit: {hit._id}");  // Debugging to check _id values
-                if (string.IsNullOrEmpty(hit._id))
-                {
-                    Console.WriteLine("Warning: _id is null or empty.");  // Alert for null _id
-                    return null;  // Return null or handle it appropriately
-                }
-
-                return new Video
-                {
-                    Id = hit._id,
-                    Title = hit.Source?.title ?? "No title",
-                    Url = ConstructBlobUrl(hit._id),
-                    ThumbnailUrl = hit.Source?.thumbnailUrl ?? "default_thumbnail.jpg"
-                };
-            }).Where(video => video != null).ToList() ?? new List<Video>();  // Filter out null videos
+            query_string = searchTerm
         }
+    };
 
-        Console.WriteLine($"Elasticsearch request failed. Status code: {response.StatusCode}, Content: {await response.Content.ReadAsStringAsync()}");
-        return new List<Video>();
+    var jsonPayload = JsonConvert.SerializeObject(searchPayload, new JsonSerializerSettings
+    {
+        ContractResolver = new DefaultContractResolver
+        {
+            NamingStrategy = new CamelCaseNamingStrategy()  // Ensure proper JSON casing
+        }
+    });
+
+    var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+    var response = await _httpClient.PostAsync(_searchApiUrl, content);
+
+    if (response.IsSuccessStatusCode)
+    {
+        var rawJson = await response.Content.ReadAsStringAsync();
+        Console.WriteLine($"Raw Elasticsearch response: {rawJson}");  // Debugging the raw response
+
+        var searchResults = JsonConvert.DeserializeObject<SearchResultsResponse>(rawJson);
+        return searchResults?.Hits?.Hits.Select(hit =>
+        {
+            Console.WriteLine($"_id from hit: {hit._id}");  // Debugging to check _id values
+            if (string.IsNullOrEmpty(hit._id))
+            {
+                Console.WriteLine("Warning: _id is null or empty.");  // Alert for null _id
+                return null;  // Return null or handle it appropriately
+            }
+
+            var videoId = Path.GetFileNameWithoutExtension(hit._id);  // Extract video ID from _id
+
+            return new Video
+            {
+                // Assuming the title is in the filename; otherwise, adjust as needed.
+                Title = videoId.Replace("_", " ").Replace("-", " "),
+                Url = ConstructBlobUrl(hit._id),
+                // Use a default thumbnail if none is provided, ensure this image exists in your project
+                ThumbnailUrl = hit.Source?.thumbnailUrl ?? "/images/default-thumbnail.jpg"
+            };
+        }).Where(video => video != null).ToList() ?? new List<Video>();  // Filter out null videos
     }
+
+    Console.WriteLine($"Elasticsearch request failed. Status code: {response.StatusCode}, Content: {await response.Content.ReadAsStringAsync()}");
+    return new List<Video>();
+}
+
 
 
     public string ConstructBlobUrl(string filename)
     {
         string baseUrl = "https://forzasysstorage.blob.core.windows.net";
-        string sasToken = "sv=2023-01-03&st=2024-04-12T12%3A02%3A23Z&se=2024-04-13T12%3A17%3A23Z&sr=c&sp=r&sig=Jkwn4RvIGpcxyP6mjRSfkvgkeOacBViycvg0hkOZvVE%3D";
+        string sasToken = "?sv=2023-01-03&st=2024-04-13T12%3A10%3A59Z&se=2025-04-14T12%3A10%3A00Z&sr=c&sp=rl&sig=fdO1sM4dhg%2FfOsMcfBXyz8J5oUMBRrgsgnQiaUeiQKA%3D";
 
         // Ensure the filename is URL encoded properly to handle special characters
         string encodedFilename = Uri.EscapeDataString(filename).Replace("%2F", "/");

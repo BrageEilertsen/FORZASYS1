@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2OI/gB0VsrCuSqOJS3iR/fTDITldKvfW5MSTiCGjEMA=",
+  "Hash": "Oju1lsDEie7f6C7LmWJpEnv//eIvewdzjnnpdBBrPDc=",
   "Source": "FORZASYS1",
   "BasePath": "_content/FORZASYS1",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/images/default-thumbnail.jpg",
+      "SourceId": "FORZASYS1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/",
+      "BasePath": "_content/FORZASYS1",
+      "RelativePath": "images/default-thumbnail.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/default-thumbnail.jpg"
     },
     {
       "Identity": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/script.js",

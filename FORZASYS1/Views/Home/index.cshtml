@@ -1,3 +1,9 @@
+@model FORZASYS1.Models.VideoListViewModel
+@using System.Linq
+@{
+    var mainVideo = Model.Videos.FirstOrDefault();
+    var sideVideos = Model.Videos.Skip(1).ToList();
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>   
@@ -16,8 +22,8 @@
         </a>
         <img src="https://forzasys.com/images/forzasys_logo_hvit_liten.png" alt="FORZASYS logo" class="logo">
     </nav>
-    <div class="container">
-      <div class="filter-panel">
+<div class="container">
+    <div class="filter-panel">
         <button class="filter-button">Filter</button>
         <div class="filter-options">
             <div class="filter-option">
@@ -42,64 +48,78 @@
                 </select>
             </div>
     
-                <div class="filter-option">
-                    <label for="player-filter">Player:</label>
-                    <select id="player-filter">
-                        <option value="player0">--</option>
-                        <option value="player1">Player 1</option>
-                        <option value="player2">Player 2</option>
-                        <option value="player3">Player 3</option>
-                        <!-- Add more player options if needed -->
-                    </select>
-                </div>
-    
-                    <div class="filter-option">
-                        <label for="competition-filter">League:</label>
-                        <select id="competition-filter">
-                            <option value="League-0">--</option>
-                            <option value="League-1">Eliteserien</option>
-                            <option value="League-2">Allsvensken</option>
-                            <option value="League-3">Superligaen</option>
-                            <!-- Add more competition options if needed -->
-                        </select>
-                    </div>
-    
-                        <div class="filter-option">
-                            <label for="highlight-type-filter">Highlight Type:</label>
-                            <select id="highlight-type-filter">
-                                <option value="goals">Goals</option>
-                                <option value="assists">Assists</option>
-                                <option value="red-cards">Red Cards</option>
-                                <!-- Add more highlight type options if needed -->
-                            </select>
-                     </div>
-                </div>
-        </div>
-        <form action="/Video/Search" method="get">
-            <div class="search-bar">
-                <input type="text" id="search-input" name="searchTerm" placeholder="Search...">
-                <button type="submit">Search</button>
+            <div class="filter-option">
+                <label for="player-filter">Player:</label>
+                <select id="player-filter">
+                    <option value="player0">--</option>
+                    <option value="player1">Player 1</option>
+                    <option value="player2">Player 2</option>
+                    <option value="player3">Player 3</option>
+                    <!-- Add more player options if needed -->
+                </select>
             </div>
-        </form>
-          <div>  
-              <h1 class="spacer">Most recent</h1>
-          </div>
-             <div>
-                  <h2 class="spacer2">Recommended</h2>
-             </div>
-                <div class="video-suggestions">
-                    <div class="big-video">
-                     <!-- big video/clip suggestion here -->
-                </div>
-                <div class="small-videos">
-                     <div class="small-video">
-                    <!-- small video/clip suggestion here -->
-                </div>
-                    <div class="small-video">
-                            <!-- small video/clip suggestion here -->
-                    </div>
-                </div>
+    
+            <div class="filter-option">
+                <label for="competition-filter">League:</label>
+                <select id="competition-filter">
+                    <option value="League-0">--</option>
+                    <option value="League-1">Eliteserien</option>
+                    <option value="League-2">Allsvensken</option>
+                    <option value="League-3">Superligaen</option>
+                    <!-- Add more competition options if needed -->
+                </select>
+            </div>
+    
+            <div class="filter-option">
+                <label for="highlight-type-filter">Highlight Type:</label>
+                <select id="highlight-type-filter">
+                    <option value="goals">Goals</option>
+                    <option value="assists">Assists</option>
+                    <option value="red-cards">Red Cards</option>
+                    <!-- Add more highlight type options if needed -->
+                </select>
             </div>
         </div>
-    </body> 
+    </div>
+    <!-- Video search form -->
+    <form action="/" method="get">
+        <div class="search-bar">
+            <input type="text" id="search-input" name="searchTerm" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button> 
+        </div>
+    </form>
+        
+    <!-- Section for displaying search results -->
+            <div class="video-suggestions">
+                @if (Model.Videos.Any())
+                {
+                    <!-- Main video rendering here -->
+                    <div class="main-video">
+                        <h3>@mainVideo.Title</h3>
+                        <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail for @mainVideo.Title">
+                        <a href="@mainVideo.Url" target="_blank">Watch Video</a>
+                    </div>
+    
+                    <!-- Side videos rendering here -->
+                    <div class="side-videos">
+                        @foreach (var video in sideVideos)
+                        {
+                            <div class="small-video">
+                                <h3>@video.Title</h3>
+                                <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title">
+                                <a href="@video.Url" target="_blank" class="video-link">Watch Video</a>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p>No videos found. Try a different search!</p>
+                }
+    </div>
+        
+</div>
+<script src="script.js"></script>
+</body> 
+
 </html>

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/images/default-thumbnail.jpg",
+      "PackagePath": "staticwebassets/images/default-thumbnail.jpg"
+    },
+    {
       "Id": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/script.js",
       "PackagePath": "staticwebassets/script.js"
     },
