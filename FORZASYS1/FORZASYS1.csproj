@@ -22,4 +22,12 @@
     </ItemGroup>
 
 
+
+
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Video\Search.cshtml" />
+    </ItemGroup>
+
+
 </Project>

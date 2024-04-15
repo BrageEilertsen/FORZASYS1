@@ -362,5 +362,17 @@ img {
     }
 }
 
+.no-videos-message {
+    font-size: 2rem; /* Adjust the size as you see fit */
+    background-color: #f8f8f8; /* A light background to make it pop a bit more */
+    border: 1px solid #ccc; /* A subtle border */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 600px; /* Adds some space at the top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+
 
 
