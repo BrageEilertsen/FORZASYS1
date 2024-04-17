@@ -201,7 +201,7 @@ img {
 /* Styles for the main video */
 .main-video {
     flex: 2; /* Allows the main video to take more space */
-    background-color: #ccd;
+    background-color: #B6BBC4;
     border-radius: 5px;
     margin-right: 20px; /* Space between main video and side videos */
     margin-bottom: 400px;
@@ -223,7 +223,7 @@ img {
 }
 
 .small-video {
-    background-color: #ccd;
+    background-color: #B6BBC4;
     border-radius: 5px;
     margin-bottom: 19px; /* Space between side videos */
     
@@ -240,7 +240,7 @@ img {
 .main-video a {
     display: inline-block;
     padding: 8px 10px;
-    background-color: #2c2c2c; /* A nice shade of blue */
+    background-color: #007BFF; /* A nice shade of blue */
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -252,7 +252,7 @@ img {
 }
 
 .main-video a:hover {
-    background-color: #1669c7; /* A darker shade for hover effect */
+    background-color: #0056b3; /* A darker shade for hover effect */
     text-decoration: none; /* Ensures no underline on hover */
 }
 
@@ -298,7 +298,7 @@ img {
 .video-link {
     display: inline-block;
     padding: 8px 10px;
-    background-color: #2c2c2c; /* A nice shade of blue */
+    background-color: #007BFF; /* A nice shade of blue */
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -324,7 +324,7 @@ img {
 }
 
 .video-link:hover {
-    background-color: #1669c7; /* A darker shade for hover effect */
+    background-color: #0056b3; /* A darker shade for hover effect */
     text-decoration: none; /* Ensures no underline on hover */
 }
 

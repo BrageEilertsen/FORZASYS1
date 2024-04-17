@@ -16,7 +16,7 @@ public class ElasticsearchService
     public ElasticsearchService(HttpClient httpClient, IOptions<ElasticConfig> config)
     {
         _httpClient = httpClient;
-        _searchApiUrl = $"{config.Value.Uri}/_application/search_application/testsøk/_search";
+        _searchApiUrl = $"{config.Value.Uri}/_application/search_application/forzasys-search/_search";
         _httpClient.DefaultRequestHeaders.Clear();
         _httpClient.DefaultRequestHeaders.Add("Authorization", $"ApiKey {config.Value.ApiKey}");
     }
