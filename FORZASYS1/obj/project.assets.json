@@ -291,25 +291,25 @@
     ]
   },
   "packageFolders": {
-    "/Users/brageeilertsen/.nuget/packages/": {}
+    "/Users/theof/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
+      "projectUniqueName": "/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
       "projectName": "FORZASYS1",
-      "projectPath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
-      "packagesPath": "/Users/brageeilertsen/.nuget/packages/",
-      "outputPath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/obj/",
+      "projectPath": "/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
+      "packagesPath": "/Users/theof/.nuget/packages/",
+      "outputPath": "/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/brageeilertsen/.nuget/NuGet/NuGet.Config"
+        "/Users/theof/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -360,7 +360,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
       }
     }
   }

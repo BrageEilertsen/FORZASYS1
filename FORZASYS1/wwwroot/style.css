@@ -373,6 +373,23 @@ img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
 
+.footer-content {
+    text-align: center;
+    color:white;
+    background-color: #2c2c2c;
+    padding-bottom: 50px;
+    padding-top: 60;
 
-
-
+}
+.footer-content .contact {
+    color:yellow;
+}
+.footer-content .telefon {
+    color:white;
+}
+.footer-content .address {
+    color:yellow;
+}
+.footer-content .address2 {
+    color:yellow;
+}

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jk4kqqXZVJTwHPczEH+jKQh5nZs9Dkcf+vwMdvjomn0nHr8K/quH146DabtR0S9NrEVERf1GJSSnGACigHL2Rg==",
+  "dgSpecHash": "iJKcv1V0l6ht1/mtfOPT0vgsQ1ogWxPfGxDSUCz+9Ign2ZtavQtEk23k7ARda94dhV012w1IR6xsqL6ZZjArQQ==",
   "success": true,
-  "projectFilePath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
+  "projectFilePath": "/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
   "expectedPackageFiles": [
-    "/Users/brageeilertsen/.nuget/packages/elasticsearch.net/7.17.5/elasticsearch.net.7.17.5.nupkg.sha512",
-    "/Users/brageeilertsen/.nuget/packages/microsoft.csharp/4.6.0/microsoft.csharp.4.6.0.nupkg.sha512",
-    "/Users/brageeilertsen/.nuget/packages/nest/7.17.5/nest.7.17.5.nupkg.sha512",
-    "/Users/brageeilertsen/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
-    "/Users/brageeilertsen/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
-    "/Users/brageeilertsen/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
+    "/Users/theof/.nuget/packages/elasticsearch.net/7.17.5/elasticsearch.net.7.17.5.nupkg.sha512",
+    "/Users/theof/.nuget/packages/microsoft.csharp/4.6.0/microsoft.csharp.4.6.0.nupkg.sha512",
+    "/Users/theof/.nuget/packages/nest/7.17.5/nest.7.17.5.nupkg.sha512",
+    "/Users/theof/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/theof/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/theof/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

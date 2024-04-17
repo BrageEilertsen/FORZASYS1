@@ -1,19 +1,11 @@
 {
   "Files": [
     {
-      "Id": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/.DS_Store",
-      "PackagePath": "staticwebassets/.DS_Store"
-    },
-    {
-      "Id": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/images/default-thumbnail.jpg",
-      "PackagePath": "staticwebassets/images/default-thumbnail.jpg"
-    },
-    {
-      "Id": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/script.js",
+      "Id": "/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/wwwroot/script.js",
       "PackagePath": "staticwebassets/script.js"
     },
     {
-      "Id": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/style.css",
+      "Id": "/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/wwwroot/style.css",
       "PackagePath": "staticwebassets/style.css"
     },
     {

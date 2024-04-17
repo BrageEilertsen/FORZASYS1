@@ -31,3 +31,36 @@
 /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Nest.dll
 /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.csproj.CopyComplete
 /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/appsettings.Development.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/appsettings.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/FORZASYS1.staticwebassets.runtime.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/FORZASYS1
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/FORZASYS1.deps.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/FORZASYS1.runtimeconfig.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/FORZASYS1.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/FORZASYS1.pdb
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Elasticsearch.Net.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Nest.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.csproj.AssemblyReference.cache
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.AssemblyInfoInputs.cache
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.AssemblyInfo.cs
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.csproj.CoreCompileInputs.cache
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.MvcApplicationPartsAssemblyInfo.cache
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.RazorAssemblyInfo.cache
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.RazorAssemblyInfo.cs
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets/msbuild.FORZASYS1.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets/msbuild.build.FORZASYS1.props
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.FORZASYS1.props
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.FORZASYS1.props
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets.pack.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets.build.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/staticwebassets.development.json
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/scopedcss/bundle/FORZASYS1.styles.css
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.csproj.CopyComplete
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/refint/FORZASYS1.dll
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.pdb
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/FORZASYS1.genruntimeconfig.cache
+/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/obj/Debug/net7.0/ref/FORZASYS1.dll
