@@ -6,124 +6,128 @@
 }
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+<head>   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=egde">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forzasys</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+    
     <nav>
-        <div class="navbar" />
+        <div class="navbar"/>
         <a href="#" class="menu-item">
             <img src="https://forzasys.com/images/25694-15e43067.png" height="45px" alt="FORZASYS menu">
         </a>
         <img src="https://forzasys.com/images/forzasys_logo_hvit_liten.png" alt="FORZASYS logo" class="logo">
     </nav>
-    <div class="container">
-        <div class="filter-panel">
-            <button class="filter-button">Filter</button>
-            <div class="filter-options">
-                <div class="filter-option">
-                    <label for="date-filter">Date:</label>
-                    <select id="date-filter">
-                        <option value="today">Today</option>
-                        <option value="this-week">This Week</option>
-                        <option value="this-month">This Month</option>
-                        <option value="this-year">This Year</option>
-                        <!-- Add more date range options if needed -->
-                    </select>
-                </div>
-
-                <div class="filter-option">
-                    <label for="team-filter">Team:</label>
-                    <select id="team-filter">
-                        <option value="team0">--</option>
-                        <option value="team1">Team 1</option>
-                        <option value="team2">Team 2</option>
-                        <option value="team3">Team 3</option>
-                        <!-- Add more team options if needed -->
-                    </select>
-                </div>
-
-                <div class="filter-option">
-                    <label for="player-filter">Player:</label>
-                    <select id="player-filter">
-                        <option value="player0">--</option>
-                        <option value="player1">Player 1</option>
-                        <option value="player2">Player 2</option>
-                        <option value="player3">Player 3</option>
-                        <!-- Add more player options if needed -->
-                    </select>
-                </div>
-
-                <div class="filter-option">
-                    <label for="competition-filter">League:</label>
-                    <select id="competition-filter">
-                        <option value="League-0">--</option>
-                        <option value="League-1">Eliteserien</option>
-                        <option value="League-2">Allsvensken</option>
-                        <option value="League-3">Superligaen</option>
-                        <!-- Add more competition options if needed -->
-                    </select>
-                </div>
-
-                <div class="filter-option">
-                    <label for="highlight-type-filter">Highlight Type:</label>
-                    <select id="highlight-type-filter">
-                        <option value="goals">Goals</option>
-                        <option value="assists">Assists</option>
-                        <option value="red-cards">Red Cards</option>
-                        <!-- Add more highlight type options if needed -->
-                    </select>
-                </div>
+<div class="container">
+    <div class="filter-panel">
+        <button class="filter-button">Filter</button>
+        <div class="filter-options">
+            <div class="filter-option">
+                <label for="date-filter">Date:</label>
+                <select id="date-filter">
+                    <option value="today">Today</option>
+                    <option value="this-week">This Week</option>
+                    <option value="this-month">This Month</option>
+                    <option value="this-year">This Year</option>
+                    <!-- Add more date range options if needed -->
+                </select>
             </div>
-        </div>
-        <!-- Video search form -->
-        <form action="/" method="get">
-            <div class="search-bar">
-                <input type="text" id="search-input" name="searchTerm" placeholder="Search...">
-                <button type="submit" class="search-button">Search</button>
+    
+            <div class="filter-option">
+                <label for="team-filter">Team:</label>
+                <select id="team-filter">
+                    <option value="team0">--</option>
+                    <option value="team1">Team 1</option>
+                    <option value="team2">Team 2</option>
+                    <option value="team3">Team 3</option>
+                    <!-- Add more team options if needed -->
+                </select>
             </div>
-        </form>
-
-        <!-- Section for displaying search results -->
-        <div class="video-suggestions">
-            @if (Model.Videos.Any())
-            {
-                <!-- Main video rendering here -->
-                <div class="main-video">
-                    <h3>@mainVideo.Title</h3>
-                    <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail for @mainVideo.Title">
-                    <a href="@mainVideo.Url" target="_blank">Watch Video</a>
-                </div>
-
-                <!-- Side videos rendering here -->
-                <div class="side-videos">
-                    @foreach (var video in sideVideos)
-                    {
-                        <div class="small-video">
-                            <h3>@video.Title</h3>
-                            <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title">
-                            <a href="@video.Url" target="_blank" class="video-link">Watch Video</a>
-                        </div>
-                    }
-                </div>
-            }
-            else
-            {
-                <p class="no-videos-message">No videos found. Try a different search!</p>
-            }
+    
+            <div class="filter-option">
+                <label for="player-filter">Player:</label>
+                <select id="player-filter">
+                    <option value="player0">--</option>
+                    <option value="player1">Player 1</option>
+                    <option value="player2">Player 2</option>
+                    <option value="player3">Player 3</option>
+                    <!-- Add more player options if needed -->
+                </select>
+            </div>
+    
+            <div class="filter-option">
+                <label for="competition-filter">League:</label>
+                <select id="competition-filter">
+                    <option value="League-0">--</option>
+                    <option value="League-1">Eliteserien</option>
+                    <option value="League-2">Allsvensken</option>
+                    <option value="League-3">Superligaen</option>
+                    <!-- Add more competition options if needed -->
+                </select>
+            </div>
+    
+            <div class="filter-option">
+                <label for="highlight-type-filter">Highlight Type:</label>
+                <select id="highlight-type-filter">
+                    <option value="goals">Goals</option>
+                    <option value="assists">Assists</option>
+                    <option value="red-cards">Red Cards</option>
+                    <!-- Add more highlight type options if needed -->
+                </select>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <footer>
+    <!-- Video search form -->
+    <form action="/" method="get">
+        <div class="search-bar">
+            <input type="text" id="search-input" name="searchTerm" placeholder="Search...">
+            <button type="submit" class="search-button">Search</button> 
+        </div>
+    </form>
+        
+    <!-- Section for displaying search results -->
+            <div class="video-suggestions">
+                <!-- Conditional Rendering for Videos -->
+                @if (Model.Videos.Any())
+                {
+                    <div class="main-video">
+                        <div class="video-container">
+                            <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail" class="video-thumbnail" data-video-url="@mainVideo.Url" data-title="@mainVideo.Title" onclick="playVideo('@mainVideo.Url', 'mainVideoPlayer', '@mainVideo.Title')">
+                            <video id="mainVideoPlayer" controls style="display: none;">
+                                <source src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3 id="mainVideoTitle">@mainVideo.Title</h3> <!-- Ensure this ID matches what the JS function is looking for -->
+                    </div>
+                    <div class="side-videos">
+                        @foreach (var video in sideVideos)
+                        {
+                            <div class="small-video">
+                                <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title" class="video-thumbnail" data-video-url="@video.Url" data-title="@video.Title" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">
+                                <h3>@video.Title</h3>
+                                <a href="javascript:void(0);" 
+                                               class="video-link" data-video-url="@video.Url" 
+                                               data-title="@video.Title"
+                                               onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">Watch Video</a>
+                            </div>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <p>No videos found. Try a different search!</p>
+                }
+            </div>
+    </div>
+<script src="script.js"></script>
+<footer>
         <div class="footer-content">
-            <p class="name"><img src="https://forzasys.com/images/forzasys_logo_hvit_liten.png" </p>
+            <p class="name"><img src="https://forzasys.com/images/forzasys_logo_hvit_liten.png"></img> </p>
                 <br>
             <p class="contact">contact@forzasys.com</p>
             <br>
@@ -135,6 +139,8 @@
             </p>
         </div>
     </footer>
-</body>
+
+
+</body> 
 
 </html>
