@@ -112,6 +112,7 @@ img {
     padding: 10px;
     box-sizing: border-box;
     display: none;
+    
 }
 
 .filter-options.show {
@@ -183,9 +184,6 @@ img {
     }
 }
 
-
-
-
 /* Container for videos */
 .video-suggestions {
     display: flex;
@@ -226,7 +224,7 @@ img {
     background-color: #B6BBC4;
     border-radius: 5px;
     margin-bottom: 19px; /* Space between side videos */
-    
+
 }
 
 .small-video img {
@@ -372,6 +370,8 @@ img {
     margin-bottom: 600px; /* Adds some space at the top */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
+
+
 
 
 

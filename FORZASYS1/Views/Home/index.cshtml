@@ -91,34 +91,38 @@
         
     <!-- Section for displaying search results -->
             <div class="video-suggestions">
+                <!-- Conditional Rendering for Videos -->
                 @if (Model.Videos.Any())
                 {
-                    <!-- Main video rendering here -->
                     <div class="main-video">
-                        <h3>@mainVideo.Title</h3>
-                        <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail for @mainVideo.Title">
-                        <a href="@mainVideo.Url" target="_blank">Watch Video</a>
+                        <div class="video-container">
+                            <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail" class="video-thumbnail" data-video-url="@mainVideo.Url" data-title="@mainVideo.Title" onclick="playVideo('@mainVideo.Url', 'mainVideoPlayer', '@mainVideo.Title')">
+                            <video id="mainVideoPlayer" controls style="display: none;">
+                                <source src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3 id="mainVideoTitle">@mainVideo.Title</h3> <!-- Ensure this ID matches what the JS function is looking for -->
                     </div>
-    
-                    <!-- Side videos rendering here -->
                     <div class="side-videos">
                         @foreach (var video in sideVideos)
                         {
                             <div class="small-video">
+                                <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title" class="video-thumbnail" data-video-url="@video.Url" data-title="@video.Title" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">
                                 <h3>@video.Title</h3>
-                                <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title">
-                                <a href="@video.Url" target="_blank" class="video-link">Watch Video</a>
+                                <a href="javascript:void(0);" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')" class="video-link">Watch Video</a>
                             </div>
                         }
                     </div>
                 }
                 else
                 {
-                    <p class="no-videos-message">No videos found. Try a different search!</p>
+                    <p>No videos found. Try a different search!</p>
                 }
             </div>
     </div>
 <script src="script.js"></script>
+
 </body> 
 
 </html>
