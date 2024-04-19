@@ -110,7 +110,10 @@
                             <div class="small-video">
                                 <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title" class="video-thumbnail" data-video-url="@video.Url" data-title="@video.Title" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">
                                 <h3>@video.Title</h3>
-                                <a href="javascript:void(0);" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')" class="video-link">Watch Video</a>
+                                <a href="javascript:void(0);" 
+                                               class="video-link" data-video-url="@video.Url" 
+                                               data-title="@video.Title"
+                                               onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">Watch Video</a>
                             </div>
                         }
                     </div>
