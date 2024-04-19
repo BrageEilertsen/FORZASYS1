@@ -362,35 +362,36 @@ img {
     }
 }
 
+
 .no-videos-message {
-    font-size: 2rem; /* Adjust the size as you see fit */
-    background-color: #f8f8f8; /* A light background to make it pop a bit more */
-    border: 1px solid #ccc; /* A subtle border */
+    font-size: 2rem; 
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc; 
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    margin-bottom: 600px; /* Adds some space at the top */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    margin-bottom: 600px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
     text-align: center;
-    color:white;
+    color: white;
     background-color: #2c2c2c;
-    padding: 10px 10px 0px 10px;
+    padding: 8px;  
     bottom: 0;
     width: 100%;
     position: fixed;
+    font-size: 14px;  
 }
-.footer-content .contact {
-    color:yellow;
-}
-.footer-content .telefon {
-    color:white;
-}
-.footer-content .address {
-    color:yellow;
-}
+
+.footer-content .contact,
+.footer-content .telefon,
+.footer-content .address,
 .footer-content .address2 {
-    color:yellow;
+    color: yellow;
+}
+
+.footer-content .telefon {
+    color: white;
 }
