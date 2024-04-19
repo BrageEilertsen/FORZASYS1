@@ -9,13 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FORZASYS1
 build_property.RootNamespace = FORZASYS1
-build_property.ProjectDir = /Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/
+build_property.ProjectDir = /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1
+build_property.MSBuildProjectDirectory = /Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/theof/Desktop/untitled folder/FORZASYS1/FORZASYS1/Views/Home/index.cshtml]
+[/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/Views/Home/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9pbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
