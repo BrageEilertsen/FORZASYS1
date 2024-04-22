@@ -94,38 +94,38 @@
 
     <!-- Section for displaying search results -->
     <div class="video-suggestions">
-        <!-- Conditional Rendering for Videos -->
-        @if (Model.Videos.Any())
-        {
-            <div class="main-video">
-                <div class="video-container">
-                    <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail" class="video-thumbnail" data-video-url="@mainVideo.Url" data-title="@mainVideo.Title" onclick="playVideo('@mainVideo.Url', 'mainVideoPlayer', '@mainVideo.Title')">
-                    <video id="mainVideoPlayer" controls style="display: none;">
-                        <source src="" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <h3 id="mainVideoTitle">@mainVideo.Title</h3> <!-- Ensure this ID matches what the JS function is looking for -->
-            </div>
-            <div class="side-videos">
-                @foreach (var video in sideVideos)
-                {
-                    <div class="small-video">
-                        <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title" class="video-thumbnail" data-video-url="@video.Url" data-title="@video.Title" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">
-                        <h3>@video.Title</h3>
-                        <a href="javascript:void(0);"
-                           class="video-link" data-video-url="@video.Url"
-                           data-title="@video.Title"
-                           onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">Watch Video</a>
+            <!-- Conditional Rendering for Videos -->
+            @if (Model.Videos.Any())
+            {
+                <div class="main-video">
+                    <div class="video-container">
+                        <img src="@mainVideo.ThumbnailUrl" alt="Thumbnail" class="video-thumbnail" data-video-url="@mainVideo.Url" data-title="@mainVideo.Title" onclick="playVideo('@mainVideo.Url', 'mainVideoPlayer', '@mainVideo.Title')">
+                        <video id="mainVideoPlayer" controls style="display: none;">
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                }
-            </div>
-        }
-        else
-        {
-            <p class="no-videos-message">No videos found. Try a different search!<br> For example "gult, or just sk"</p>
-        }
-    </div>
+                    <h3 id="mainVideoTitle">@mainVideo.Title</h3> <!-- Ensure this ID matches what the JS function is looking for -->
+                </div>
+                <div class="side-videos">
+                    @foreach (var video in sideVideos)
+                    {
+                        <div class="small-video">
+                            <img src="@video.ThumbnailUrl" alt="Thumbnail for @video.Title" class="video-thumbnail" data-video-url="@video.Url" data-title="@video.Title" onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">
+                            <h3>@video.Title</h3>
+                            <a href="javascript:void(0);"
+                               class="video-link" data-video-url="@video.Url"
+                               data-title="@video.Title"
+                               onclick="playVideo('@video.Url', 'mainVideoPlayer', '@video.Title')">Watch Video</a>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="no-videos-message">No videos found. Try a different search!<br> For example "gult, or just sk"</p>
+            }
+        </div>
 </div>
 <script src="script.js"></script>
 <footer>
