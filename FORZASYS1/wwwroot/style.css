@@ -444,24 +444,68 @@ video {
 
 
 .no-videos-message {
-    font-size: 2rem;
-    background-color: #f8f8f8;
-    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
     padding: 20px;
-    border-radius: 5px;
     text-align: center;
-    margin: 20px auto; /* Centers the message horizontally */
-    width: 80%; /* Sets a relative width for responsiveness */
-    max-width: 600px; /* Maximum width to ensure it doesn't get too wide on larger screens */
+    margin: 10px auto; /* Consistent vertical spacing */
+    width: 80%;
+    max-width: 600px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #666;
+    border: 1px solid #ccc;
 }
 
 @media (max-width: 768px) {
     .no-videos-message {
-        width: 95%; /* Wider on smaller screens to utilize more space */
-        margin: 20px 2.5%; /* Adjust margin for small horizontal padding */
+        width: 95%;
+        margin: 10px 2.5%; /* Adjusted margin for smaller screens */
     }
 }
+
+.welcome-message {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 20px auto; /* Adjusted for visual consistency */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.welcome-message h1 {
+    color: #333;
+}
+
+.welcome-message p {
+    color: #666;
+    font-size: 16px;
+}
+
+.welcome-message ul {
+    list-style: none;
+    padding: 0;
+}
+
+.welcome-message li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.welcome-message strong {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .welcome-message {
+        margin: 10px 2.5%; /* Adjusted margin for mobile screens */
+    }
+}
+
+
+
+
 
 
 .footer-content {
