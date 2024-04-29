@@ -444,7 +444,7 @@ video {
 
 
 .homepage-text {
-    margin-top: -140px; /* This moves the entire .homepage-text content up */
+    margin-top: -125px; /* This moves the entire .homepage-text content up */
     line-height: 1.5;
 }
 
