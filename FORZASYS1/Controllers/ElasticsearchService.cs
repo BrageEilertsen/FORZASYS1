@@ -16,7 +16,7 @@ public class ElasticsearchService
     public ElasticsearchService(HttpClient httpClient, IOptions<ElasticConfig> config)
     {
         _httpClient = httpClient;
-        _searchApiUrl = $"{config.Value.Uri}/_application/search_application/forzasys-search/_search";
+        _searchApiUrl = $"{config.Value.Uri}/_application/search_application/forzasyssearchapp/_search";
         _httpClient.DefaultRequestHeaders.Clear();
         _httpClient.DefaultRequestHeaders.Add("Authorization", $"ApiKey {config.Value.ApiKey}");
     }
@@ -79,7 +79,7 @@ public class ElasticsearchService
     public string ConstructBlobUrl(string filename)
     {
         string baseUrl = "https://forzasysstorage.blob.core.windows.net";
-        string sasToken = "?sv=2023-01-03&st=2024-04-13T12%3A10%3A59Z&se=2025-04-14T12%3A10%3A00Z&sr=c&sp=rl&sig=fdO1sM4dhg%2FfOsMcfBXyz8J5oUMBRrgsgnQiaUeiQKA%3D";
+        string sasToken = "sp=r&st=2024-04-29T18:08:34Z&se=2024-04-30T02:08:34Z&spr=https&sv=2022-11-02&sr=c&sig=ye1G1FL6mXZSKnhBSNWaNb4JqNIRyMjVXgLoHGojDgA%3D";
 
         // Ensure the filename is URL encoded properly to handle special characters
         string encodedFilename = Uri.EscapeDataString(filename).Replace("%2F", "/");
