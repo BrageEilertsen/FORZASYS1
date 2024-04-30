@@ -15,3 +15,6 @@ of finding and viewing significant football actions like goals, penalties, and s
 - **Elasticsearch**: For indexing and searching the video clips.
 - **Azure Blob Storage**: For storing the video clips.
 - **.NET Core**: Backend API for handling business logic and data interaction.
+
+## Website
+https://forzasys.azurewebsites.net/
