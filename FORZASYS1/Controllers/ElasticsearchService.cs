@@ -79,7 +79,7 @@ public class ElasticsearchService
     public string ConstructBlobUrl(string filename)
     {
         string baseUrl = "https://forzasysstorage.blob.core.windows.net";
-        string sasToken = "sp=r&st=2024-04-29T18:08:34Z&se=2024-04-30T02:08:34Z&spr=https&sv=2022-11-02&sr=c&sig=ye1G1FL6mXZSKnhBSNWaNb4JqNIRyMjVXgLoHGojDgA%3D";
+        string sasToken = "sp=r&st=2024-04-30T20:57:00Z&se=2024-11-11T05:57:00Z&spr=https&sv=2022-11-02&sr=c&sig=al21O8KJOGxL%2F4FlSpBqkg3O9vpmVSyBsv%2Baxp6JNOI%3D";
 
         // Ensure the filename is URL encoded properly to handle special characters
         string encodedFilename = Uri.EscapeDataString(filename).Replace("%2F", "/");
