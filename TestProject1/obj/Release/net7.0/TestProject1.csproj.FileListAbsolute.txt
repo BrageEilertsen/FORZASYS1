@@ -1,0 +1,6 @@
+/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/bin/Release/net7.0/CoverletSourceRootsMapping
+/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/obj/Release/net7.0/TestProject1.csproj.AssemblyReference.cache
+/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/obj/Release/net7.0/TestProject1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/obj/Release/net7.0/TestProject1.AssemblyInfoInputs.cache
+/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/obj/Release/net7.0/TestProject1.AssemblyInfo.cs
+/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/obj/Release/net7.0/TestProject1.csproj.CoreCompileInputs.cache
