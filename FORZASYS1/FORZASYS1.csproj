@@ -27,6 +27,8 @@
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="Views\Video\Search.cshtml" />
+      <_ContentIncludedByDefault Remove="Tests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="Tests\obj\Tests.csproj.nuget.dgspec.json" />
     </ItemGroup>
 
 

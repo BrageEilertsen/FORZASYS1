@@ -1,3 +1,6 @@
+using FORZASYS1.Controllers;
+using FORZASYS1.Services;
+
 namespace FORZASYS1.Models
 {
     public class Hit

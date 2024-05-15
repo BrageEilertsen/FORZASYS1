@@ -25,23 +25,23 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px; /* Reduced padding */
+    padding: 0 80px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    z-index: 1000;
 }
 
 .logo img {
-    height: 45px; /* Adjust logo size */
+    height: 45px; 
     width: auto;
 }
 
 .menu-item {
     color: #fff;
     text-decoration: none;
-    font-size: 16px; /* Adjusted font size */
+    font-size: 16px; 
     padding: 10px;
 }
 
@@ -95,7 +95,7 @@ img {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Changed from center to stretch to allow full width usage */
+    align-items: center; 
     justify-content: space-between;
     min-height: calc(100vh - 80px);
     padding: 10px;
@@ -104,16 +104,18 @@ img {
 }
 
 .filter-panel {
-    position: absolute; /* Positioned absolutely for explicit placement */
-    top: 120px; /* Match the vertical alignment with the search bar */
-    left: 30px; /* Maintain left alignment */
-    width: 250px; /* Maintain a fixed width */
+    position: absolute; 
+    top: 120px; 
+    left: 30px; 
+    width: 250px; 
     padding: 20px;
-    z-index: 100; /* Ensure it's above other content but below fixed elements like navbar */
+    z-index: 100;
+    border-radius: 5px;
 }
 
 .filter-option {
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .filter-option label {
@@ -139,20 +141,31 @@ img {
     cursor: pointer;
     font-weight: bold;
     margin-top: 10px;
-    width: 100%; /* Full width */
+    width: 100%; 
+}
+
+.filter-button:hover {
+    background-color: #357ae8;
+}
+
+.filter-button:active {
+    background-color: #3367d6;
+    transform: scale(0.97);
 }
 
 .filter-options {
+    margin-top: 15px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: 60px; /* Position it just below the button */
-    left: 0; /* Align to the left edge of the filter-panel */
-    width: 100%; /* Take the full width of the filter-panel */
+    top: 60px; 
+    left: 0; 
+    width: 100%; 
     padding: 10px;
     box-sizing: border-box;
     display: none;
+    border-radius: 5px;
 }
 
 .filter-options.show {
@@ -161,18 +174,18 @@ img {
 
 @media (max-width: 800px) {
     .filter-panel {
-        position: static; /* Reset to static for better mobile layout */
+        position: static; 
         top: auto;
         left: auto;
-        width: 50%; /* Adjust width for smaller screens */
-        margin: 10px auto; /* Center align on mobile devices */
-        padding-top: 60px; /* Slightly reduced padding for smaller screens */
+        width: 50%; 
+        margin: 10px auto;
+        padding-top: 60px;
     }
 
     .filter-options {
-        position: static; /* Adjust position for mobile view */
-        width: 90%; /* Slightly smaller width for padding */
-        left: 5%; /* Center align the options */
+        position: static;
+        width: 90%; 
+        left: 5%; 
         top: auto;
         transform: none;
     }
@@ -181,11 +194,11 @@ img {
 
 /* Search bar styles */
 .search-bar {
-    position: absolute; /* Positioned absolutely to place it explicitly */
-    top: 120px; /* Align vertically at a specific position */
-    right: 30px; /* Align it to the right with some margin */
-    max-width: 500px; /* Maintain a maximum width */
-    width: 100%; /* Use full available width up to the max width */
+    position: absolute; 
+    top: 120px; 
+    right: 30px; 
+    max-width: 500px; 
+    width: 100%; 
     display: flex;
     align-items: center;
     padding: 0;
@@ -193,60 +206,60 @@ img {
 
 .search-bar input[type="text"] {
     flex-grow: 1;
-    padding: 12px 20px; /* Consistent padding */
+    padding: 12px 20px; 
     border: 1px solid #dfe1e5;
-    border-right: none; /* Keep the right border off for aesthetics with the button */
-    border-radius: 50px 0 0 50px; /* Maintain the rounded corners on the left */
-    font-size: 16px; /* Consistent font size */
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle inset shadow for depth */
-    transition: box-shadow 0.2s, border 0.2s; /* Smooth transitions for focus and hover */
-    height: 40px; /* Fixed height to match the button */
-    box-sizing: border-box; /* Include padding and borders in width and height */
+    border-right: none;
+    border-radius: 50px 0 0 50px; 
+    font-size: 16px; 
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s, border 0.2s; 
+    height: 40px; 
+    box-sizing: border-box;
 }
 
 .search-bar input[type="text"]:focus {
-    outline: none; /* Remove default focus outline */
-    border-color: #4285f4; /* Highlight focus with a blue border */
-    box-shadow: 0 0 8px rgba(66, 133, 244, 0.5); /* A light blue glow to emphasize focus */
+    outline: none; 
+    border-color: #4285f4;
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.5); 
 }
 
 .search-bar button {
-    padding: 12px 20px; /* Adequate padding for clickable area */
-    background-color: #2c2c2c; /* Dark background for contrast */
-    border: 1px solid #4285f4; /* Subtle border to complement the focus state */
-    border-radius: 0 50px 50px 0; /* Rounded corners on the right */
-    color: white; /* Text color for readability */
-    font-weight: 500; /* Slightly bold font for emphasis */
-    cursor: pointer; /* Cursor indicates button */
-    transition: background-color 0.2s, transform 0.1s; /* Smooth transition for hover and press */
-    height: 40px; /* Align height with input field */
-    box-sizing: border-box; /* Include padding and border in dimensions */
+    padding: 12px 20px; 
+    background-color: #2c2c2c; 
+    border: 1px solid #4285f4; 
+    border-radius: 0 50px 50px 0; 
+    color: white; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: background-color 0.2s, transform 0.1s; 
+    height: 40px; 
+    box-sizing: border-box;
 }
 
 /* Hover and active states for better user feedback */
 .search-bar button:hover {
-    background-color: #357ae8; /* A lighter blue for hover state */
+    background-color: #357ae8;
 }
 
 .search-bar button:active {
-    background-color: #3367d6; /* A slightly darker blue for the active state */
-    transform: scale(0.97); /* Slight scale down to mimic a press */
+    background-color: #3367d6; 
+    transform: scale(0.97); 
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .search-bar {
-        position: static; /* Position static for better mobile layout */
+        position: static; 
         top: auto;
         right: auto;
-        width: 90%; /* Adjust width for mobile screens */
-        margin-top: 17px; /* Space from the top elements */
+        width: 90%; 
+        margin-top: 17px;
         margin-left: auto;
-        margin-right: auto; /* Center the search bar on small screens */
+        margin-right: auto;
     }
 
     .search-bar input[type="text"], .search-bar button {
-        font-size: 14px; /* Smaller font size for smaller screens */
+        font-size: 14px; 
     }
 }
 
@@ -258,7 +271,7 @@ img {
     flex-wrap: wrap;
     gap: 20px;
     padding: 25px;
-    margin-top: 100px; /* Space below the navbar, adjust as needed */
+    margin-top: 100px; 
     min-height: 600px;
 }
 
@@ -270,16 +283,16 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 5px; /* Rounded corners as specified */
+    border-radius: 5px; 
 }
 
 
 /* Styles for the main video */
 .main-video {
-    flex: 2; /* Allows the main video to take more space */
+    flex: 2;
     background-color: #B6BBC4;
     border-radius: 5px;
-    margin-right: 20px; /* Space between main video and side videos */
+    margin-right: 20px;
     margin-bottom: 400px;
 }
 
@@ -287,7 +300,7 @@ video {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 5px 5px 5px 5px; /* Rounded corners at the top */
+    border-radius: 5px 5px 5px 5px; 
 }
 
 /* Styles for side videos */
@@ -295,28 +308,27 @@ video {
     flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 300px; /* Maximum width for side videos, adjust as needed */
+    max-width: 300px; 
 }
 
 .small-video {
     background-color: #B6BBC4;
     border-radius: 5px;
-    margin-bottom: 19px; /* Space between side videos */
-    
+    margin-bottom: 19px;
 }
 
 .small-video img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 5px 5px 5px 5px; /* Rounded corners at the top */
+    border-radius: 5px 5px 5px 5px; 
 }
 
 
 .main-video a {
     display: inline-block;
     padding: 8px 10px;
-    background-color: #007BFF; /* A nice shade of blue */
+    background-color: #007BFF;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -324,21 +336,21 @@ video {
     border-radius: 5px;
     transition: background-color 0.2s ease-in-out;
     text-decoration: none;
-    font-size: 1.1rem; /* slightly larger font size for better visibility */
+    font-size: 1.1rem;
 }
 
 .main-video a:hover {
-    background-color: #0056b3; /* A darker shade for hover effect */
-    text-decoration: none; /* Ensures no underline on hover */
+    background-color: #0056b3; 
+    text-decoration: none; 
 }
 
 .main-video a:active {
-    background-color: #0f57a6; /* An even darker shade for active state */
+    background-color: #0f57a6; 
 }
 
 .main-video a:focus {
-    outline: none; /* Remove outline on focus for a cleaner look */
-    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5); /* Add a subtle glow effect */
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5); 
 }
 
 
@@ -346,7 +358,7 @@ video {
 .video-item a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #1a73e8; /* A nice shade of blue */
+    background-color: #1a73e8; 
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -358,23 +370,23 @@ video {
 }
 
 .video-item a:hover {
-    background-color: #1669c7; /* A darker shade for hover effect */
-    text-decoration: none; /* Ensures no underline on hover */
+    background-color: #1669c7; 
+    text-decoration: none; 
 }
 
 .video-item a:active {
-    background-color: #0f57a6; /* An even darker shade for active state */
+    background-color: #0f57a6;
 }
 
 .video-item a:focus {
-    outline: none; /* Remove outline on focus for a cleaner look */
-    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5); /* Add a subtle glow effect */
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5); 
 }
 
 .video-link {
     display: inline-block;
     padding: 8px 10px;
-    background-color: #007BFF; /* A nice shade of blue */
+    background-color: #007BFF; 
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -388,7 +400,7 @@ video {
 .main-video .video-link {
     display: inline-block;
     padding: 8px 10px;
-    background-color: #007BFF; /* A nice shade of blue */
+    background-color: #007BFF; 
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -400,17 +412,17 @@ video {
 }
 
 .video-link:hover {
-    background-color: #0056b3; /* A darker shade for hover effect */
-    text-decoration: none; /* Ensures no underline on hover */
+    background-color: #0056b3; 
+    text-decoration: none; 
 }
 
 .video-link:active {
-    background-color: #0f57a6; /* An even darker shade for active state */
+    background-color: #0f57a6; 
 }
 
 .video-link:focus {
-    outline: none; /* Remove outline on focus for a cleaner look */
-    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5); /* Add a subtle glow effect */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.5);
 }
 
 .main-video h3, .small-video h3 {
@@ -438,13 +450,13 @@ video {
         max-width: none;
     }
     .main-video, .small-video {
-        margin-bottom: 10px; /* Consistent margin for all videos */
+        margin-bottom: 10px; 
     }
 }
 
 
 .homepage-text {
-    margin-top: -125px; /* This moves the entire .homepage-text content up */
+    margin-top: -125px; 
     line-height: 1.5;
 }
 
@@ -454,7 +466,7 @@ video {
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    margin: 10px auto; /* Vertical spacing from other elements */
+    margin: 10px auto; 
     width: 80%;
     max-width: 600px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -465,7 +477,7 @@ video {
 @media (max-width: 768px) {
     .no-videos-message {
         width: 95%;
-        margin: 10px 2.5%; /* Adjusted margin for smaller screens */
+        margin: 10px 2.5%; 
     }
 }
 
@@ -473,7 +485,7 @@ video {
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
-    margin: 20px auto; /* Centering the box */
+    margin: 20px auto; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
 }
@@ -491,31 +503,26 @@ video {
 }
 
 .welcome-message li {
-    margin: 10px 0; /* Spacing between list items */
+    margin: 10px 0; 
 }
 
 .welcome-message strong {
-    color: #0056b3; /* Highlights specific words */
+    color: #0056b3; 
 }
 
 @media (max-width: 768px) {
     .welcome-message {
-        margin: 10px 2.5%; /* Adjusted margin for mobile screens */
+        margin: 10px 2.5%; 
     }
 }
-
-
-
-
-
 
 .footer-content {
     text-align: center;
     color: white;
     background-color: #2c2c2c;
-    padding: 10px 20px;  /* Increased padding for better spacing */
+    padding: 10px 20px;  
     width: 100%;
-    font-size: 14px;  /* Smaller font size for less obtrusive presence */
+    font-size: 14px;  
 }
 
 .footer-content .contact,
