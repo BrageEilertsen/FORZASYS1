@@ -12,7 +12,6 @@ namespace FORZASYS1.Services
         private readonly HttpClient _httpClient;
         private readonly string _searchApiUrl;
         private readonly JsonSerializerSettings _jsonSettings;
-
         public ElasticsearchService(HttpClient httpClient, IOptions<ElasticConfig> config)
         {
             _httpClient = httpClient;
