@@ -15,7 +15,7 @@ namespace FORZASYS1.Services
         public ElasticsearchService(HttpClient httpClient, IOptions<ElasticConfig> config)
         {
             _httpClient = httpClient;
-            _searchApiUrl = $"{config.Value.Uri}/_application/search_application/forzasyssearchapp/_search";
+            _searchApiUrl = $"{config.Value.Uri}/_application/search_application/forzasyssearch/_search";
             _httpClient.DefaultRequestHeaders.Clear();
             _httpClient.DefaultRequestHeaders.Add("Authorization", $"ApiKey {config.Value.ApiKey}");
 
@@ -23,7 +23,7 @@ namespace FORZASYS1.Services
             {
                 ContractResolver = new DefaultContractResolver
                 {
-                    NamingStrategy = new CamelCaseNamingStrategy()  // Ensure proper JSON casing
+                    NamingStrategy = new CamelCaseNamingStrategy()  
                 }
             };
         }

@@ -97,7 +97,8 @@ function updateVideoSuggestions(videos) {
     mainVideoElement.classList.add('main-video');
     mainVideoElement.innerHTML = `
         <div class="video-container">
-            <img src="${mainVideo.thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video-url="${mainVideo.url}" data-title="${mainVideo.title}" onclick="playVideo('${mainVideo.url}', 'mainVideoPlayer', '${mainVideo.title}')">
+            <img src="${mainVideo.thumbnailUrl}" alt="Thumbnail" class="video-thumbnail" data-video-url="${mainVideo.url}" 
+            data-title="${mainVideo.title}" onclick="playVideo('${mainVideo.url}', 'mainVideoPlayer', '${mainVideo.title}')">
             <video id="mainVideoPlayer" controls style="display: none;">
                 <source src="" type="video/mp4">
                 Your browser does not support the video tag.
@@ -114,9 +115,11 @@ function updateVideoSuggestions(videos) {
         const videoElement = document.createElement('div');
         videoElement.classList.add('small-video');
         videoElement.innerHTML = `
-            <img src="${video.thumbnailUrl}" alt="Thumbnail for ${video.title}" class="video-thumbnail" data-video-url="${video.url}" data-title="${video.title}" onclick="playVideo('${video.url}', 'mainVideoPlayer', '${video.title}')">
+            <img src="${video.thumbnailUrl}" alt="Thumbnail for ${video.title}" class="video-thumbnail" data-video-url="${video.url}"
+             data-title="${video.title}" onclick="playVideo('${video.url}', 'mainVideoPlayer', '${video.title}')">
             <h3>${video.title}</h3>
-            <a href="javascript:void(0);" class="video-link" data-video-url="${video.url}" data-title="${video.title}" onclick="playVideo('${video.url}', 'mainVideoPlayer', '${video.title}')">Watch Video</a>
+            <a href="javascript:void(0);" class="video-link" data-video-url="${video.url}" data-title="${video.title}"
+             onclick="playVideo('${video.url}', 'mainVideoPlayer', '${video.title}')">Watch Video</a>
         `;
         sideVideosContainer.appendChild(videoElement);
     });
