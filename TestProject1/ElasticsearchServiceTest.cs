@@ -1,4 +1,3 @@
-/*
 using NUnit.Framework;
 using System.Net.Http;
 using Microsoft.Extensions.Options;
@@ -16,7 +15,8 @@ using FORZASYS1.Services;
 using Moq;
 using Moq.Language.Flow;
 using Moq.Protected;
-using Hit = FORZASYS1.Models.Hit;
+using ModelsHit = FORZASYS1.Models.Hit; // Alias for FORZASYS1.Models.Hit
+using ServicesHit = FORZASYS1.Services.Hit; // Alias for FORZASYS1.Services.Hit
 
 namespace TestProject1
 {
@@ -31,9 +31,9 @@ namespace TestProject1
         [SetUp]
         public void Setup()
         {
-            _httpMessageHandlerMock = new Mock<HttpMessageHandler>();
+            _httpMessageHandlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
             _httpClient = new HttpClient(_httpMessageHandlerMock.Object);
-            _configMock = new Mock<IOptions<ElasticConfig>>();
+            _configMock = new Mock<IOptions<ElasticConfig>>(MockBehavior.Strict);
             _configMock.Setup(config => config.Value).Returns(new ElasticConfig
             {
                 Uri = "https://example.com",
@@ -56,9 +56,9 @@ namespace TestProject1
             {
                 Hits = new HitsWrapper
                 {
-                    Hits = new List<Hit>
+                    Hits = new List<ServicesHit>
                     {
-                        new Hit
+                        new ServicesHit
                         {
                             _id = "video1.mp4",
                             Source = new Source
@@ -70,7 +70,7 @@ namespace TestProject1
                 }
             });
 
-            _httpMessageHandlerMock.SetupRequest(HttpMethod.Post, "https://example.com/_application/search_application/forzasyssearchapp/_search")
+            _httpMessageHandlerMock.SetupRequest(HttpMethod.Post, "https://example.com/_application/search_application/forzasyssearch/_search")
                                    .ReturnsResponse(jsonResponse, "application/json");
 
             // Act
@@ -89,11 +89,11 @@ namespace TestProject1
             {
                 Hits = new HitsWrapper
                 {
-                    Hits = new List<Hit>()
+                    Hits = new List<ServicesHit>()
                 }
             });
 
-            _httpMessageHandlerMock.SetupRequest(HttpMethod.Post, "https://example.com/_application/search_application/forzasyssearchapp/_search")
+            _httpMessageHandlerMock.SetupRequest(HttpMethod.Post, "https://example.com/_application/search_application/forzasyssearch/_search")
                                    .ReturnsResponse(jsonResponse, "application/json");
 
             // Act
@@ -112,9 +112,9 @@ namespace TestProject1
             {
                 Hits = new HitsWrapper
                 {
-                    Hits = new List<Hit>
+                    Hits = new List<ServicesHit>
                     {
-                        new Hit
+                        new ServicesHit
                         {
                             _id = null,
                             Source = new Source
@@ -126,7 +126,7 @@ namespace TestProject1
                 }
             });
 
-            _httpMessageHandlerMock.SetupRequest(HttpMethod.Post, "https://example.com/_application/search_application/forzasyssearchapp/_search")
+            _httpMessageHandlerMock.SetupRequest(HttpMethod.Post, "https://example.com/_application/search_application/forzasyssearch/_search")
                                    .ReturnsResponse(jsonResponse, "application/json");
 
             // Act
@@ -160,4 +160,3 @@ namespace TestProject1
         }
     }
 }
-*/
