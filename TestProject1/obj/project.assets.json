@@ -1859,11 +1859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/TestProject1.csproj",
+      "projectUniqueName": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/TestProject1/TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/TestProject1.csproj",
+      "projectPath": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/TestProject1/TestProject1.csproj",
       "packagesPath": "/Users/brageeilertsen/.nuget/packages/",
-      "outputPath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/obj/",
+      "outputPath": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/TestProject1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/brageeilertsen/.nuget/NuGet/NuGet.Config"
@@ -1878,8 +1878,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/FORZASYS1.csproj": {
-              "projectPath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/FORZASYS1.csproj"
+            "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/FORZASYS1.csproj": {
+              "projectPath": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/FORZASYS1.csproj"
             }
           }
         }

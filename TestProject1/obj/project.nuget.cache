@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fygSg1AEqe/RCoThx58gZosJIu6UJCbCxYczfl/EirrZjk/y/VKQ0I1pe3+nP2G/KqR+GgUCPp0JAb2M4nOTBg==",
+  "dgSpecHash": "58A1JOnKlZXuqUy80Ib1ehZr1x0Q0ZhmRUe+2lf4H6VsSOq7ppCk5Blm8Do8E7ybzmLB5Ay7ziUvzx/cW0PYng==",
   "success": true,
-  "projectFilePath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/TestProject1/TestProject1.csproj",
+  "projectFilePath": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/TestProject1/TestProject1.csproj",
   "expectedPackageFiles": [
     "/Users/brageeilertsen/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/brageeilertsen/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jk4kqqXZVJTwHPczEH+jKQh5nZs9Dkcf+vwMdvjomn0nHr8K/quH146DabtR0S9NrEVERf1GJSSnGACigHL2Rg==",
+  "dgSpecHash": "fvOjoFUBD7gYKuFXnI7qtwmsnaedcupohCiXyCFC2urcVvySodfSwrI1PAoTlIASNHUaqNz8fIgHRlZLN+23OQ==",
   "success": true,
-  "projectFilePath": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
+  "projectFilePath": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/FORZASYS1.csproj",
   "expectedPackageFiles": [
     "/Users/brageeilertsen/.nuget/packages/elasticsearch.net/7.17.5/elasticsearch.net.7.17.5.nupkg.sha512",
     "/Users/brageeilertsen/.nuget/packages/microsoft.csharp/4.6.0/microsoft.csharp.4.6.0.nupkg.sha512",

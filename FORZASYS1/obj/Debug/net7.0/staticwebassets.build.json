@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Oju1lsDEie7f6C7LmWJpEnv//eIvewdzjnnpdBBrPDc=",
+  "Hash": "ef1OzeR7V5KkNGbZklJ1ltpieHc7XpqhkmQbaQMTy/M=",
   "Source": "FORZASYS1",
   "BasePath": "_content/FORZASYS1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FORZASYS1/wwwroot",
       "Source": "FORZASYS1",
-      "ContentRoot": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/",
+      "ContentRoot": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/",
       "BasePath": "_content/FORZASYS1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/.DS_Store",
+      "Identity": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/.DS_Store",
       "SourceId": "FORZASYS1",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/",
+      "ContentRoot": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/",
       "BasePath": "_content/FORZASYS1",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/images/default-thumbnail.jpg",
+      "Identity": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/images/default-thumbnail.jpg",
       "SourceId": "FORZASYS1",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/",
+      "ContentRoot": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/",
       "BasePath": "_content/FORZASYS1",
       "RelativePath": "images/default-thumbnail.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/images/default-thumbnail.jpg"
     },
     {
-      "Identity": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/script.js",
+      "Identity": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/script.js",
       "SourceId": "FORZASYS1",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/",
+      "ContentRoot": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/",
       "BasePath": "_content/FORZASYS1",
       "RelativePath": "script.js",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/script.js"
     },
     {
-      "Identity": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/style.css",
+      "Identity": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/style.css",
       "SourceId": "FORZASYS1",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/brageeilertsen/RiderProjects/FORZASYS1/FORZASYS1/wwwroot/",
+      "ContentRoot": "/Users/brageeilertsen/Desktop/BacheloroppgaveVedlegg/FORZASYS1/FORZASYS1/wwwroot/",
       "BasePath": "_content/FORZASYS1",
       "RelativePath": "style.css",
       "AssetKind": "All",
